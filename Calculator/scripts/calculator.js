@@ -1,21 +1,7 @@
-/* TODO 
-
-- When a number is pressed dont let it take more spaces until another non number is 
-  pressed
-
-- after the equals is pressed it puts a 0, make sure that a number or the . is 
-  pressed 
-
-
-*/
-
 //  the flags for the calculator 
 var initalizedZero = true;    //  when the equals sign is hit it puts a 0 in the current equation holdler 
                               //  and if another number is pressed then replace it but if its a period then just add it
 var openParentheses = 0;
-
-
-
 
 /*
   Hold all the logic of adding stuff to the equation and what is allowed and its formatting such as spaces 
@@ -49,15 +35,13 @@ function addToEquaton(c){
         }else{
           if(isNaN(parseInt(equation.charAt(i-1), 10))){
 
-          $("#equaltion-holder").append(c);
-          return true;
+            $("#equaltion-holder").append(c);
+            return true;
+          }
         }
-        }
-        
-        
-        
+
       }
-      
+
       //  if we got here then it is an integer already so we can add it without white space 
       $("#equaltion-holder").append(c);
       return true;
@@ -111,16 +95,12 @@ function addToEquaton(c){
   console.log(c);
     if(equation.slice(-1) != "." && isNaN(parseInt(equation.charAt(equation.length-1), 10)) ){
       //  preform a check here to see if its an opening parenthases 
-      
-      
       $("#equaltion-holder").append(" ");
     }
-    
     $("#equaltion-holder").append(c);
     return true;
   }
   return false;
-  
 }
 //  if the string is grater than 1 remove the character and the 
 //  subsequent space 
@@ -134,12 +114,9 @@ function backspace(){
       // remove the space 
       equation = equation.slice(0,-1);
     }
-
     //  now check to see if we should throug an inialized 0 in there 
     if(equation.length == 0){
       $("#equaltion-holder").html("0");
-
-    //
     initalizedZero = true;
     openParentheses = 0;
     renderGhostParentheses();
@@ -158,8 +135,6 @@ function renderGhostParentheses(){
   return;
 
 }
-
-
 /* Set up for all the button event listeners*/
 $(document).ready(function(){
   $("#calc-btn-par-open").click(function(){
@@ -170,13 +145,9 @@ $(document).ready(function(){
   });
   $("#calc-btn-c").click(function(){
     $("#equaltion-holder").html("0");
-
-    //
     initalizedZero = true;
     openParentheses = 0;
     renderGhostParentheses();
-
-    
   });
   $("#calc-btn-ce").click(function(){
    backspace();
@@ -231,8 +202,7 @@ $(document).ready(function(){
   });
 
   $("#calc-btn-equals").click(function(){
-    //  lets eval 
-    
+    // tru to evealuate it and if exception its a error 
     try {
       if(eval($("#equaltion-holder").html()) == 0){
         initalizedZero = true;
@@ -243,15 +213,10 @@ $(document).ready(function(){
       $("#equaltion-ans").html($("#equaltion-holder").html() + " = Error");
     }
     $("#equaltion-holder").html(eval($("#equaltion-holder").html()));
-    
     openParentheses = 0;
     renderGhostParentheses();
-    
   });
-
   $("#calc-btn-period").click(function(){
     addToEquaton(".");
   });
-
-
 });
