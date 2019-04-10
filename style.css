@@ -536,21 +536,9 @@ animation: offsetFloat 6s ease-in-out infinite;
         border-bottom:2px solid white;
         margin:0 40%;
         margin-bottom:0.5rem;
+        display:flex;
       }
-      .projects-holder{
-        width:49.779%;
-        display:inline-block;
-        margin:2rem 0;
-      }
-      .project-media{
-        margin:0 auto;
-        height:12rem;
-        width:26rem;
-      }
-      .project-content{
-        margin-top:1rem;
-        text-align:center;
-      }
+      
     .projects-section{
       background:#b12127;
       padding:4rem 0;
