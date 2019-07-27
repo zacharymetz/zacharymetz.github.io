@@ -636,3 +636,171 @@ td {
   font-size: 1.5rem;
 
 }
+
+
+
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background:  #020003;
+  width: 0%;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.section-wrapper{
+  
+}
+.expeirence-section{
+  
+  flex-direction: row;
+  justify-content: center;
+  min-height:100vh;
+
+}
+.section-header{
+  height:100vh;
+  position: absolute;
+  display:inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  position: sticky;
+  top: 0;
+}
+.section-header-right{
+  
+  width: 50%;
+  margin-left:50%;
+  
+}
+.section-content-right{
+  width: 50%;
+  margin-left:0!important;
+  display:inline-block;
+  min-height:100vh;
+}
+
+.expeirence-section .section-header{
+  background: #1b9bd5;
+  color: white;
+}
+.section-content{
+  margin-top:-100vh;
+  width: 50%;
+  margin-left:50%;
+  display:inline-block;
+  min-height:100vh;
+}
+
+/*  for the h1 part of it   */
+.section-header h1{
+  font-weight: 300!important;
+  font-size: 3rem;
+}
+.section-header .padding{
+  flex-basis: 50%;
+}
+.section-header .footer{
+  padding:2rem;
+}
+
+.expeirence-section .section-content{
+  
+  display:flex;
+  flex-direction:column;
+}
+
+.section-content-wrapper{
+  display:flex;
+  flex-direction:column;
+  padding:8rem;
+  
+}
+
+@media  (min-width: 1200px) {
+  .section-content-wrapper{
+   
+    padding:8rem;
+  }
+
+}
+
+@media  (min-width: 768px) and (max-width:1201px){
+  .section-content-wrapper{
+   
+    padding:4rem;
+  }
+  
+}
+
+
+
+.section-content-wrapper .bold-text{
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 1.6em;
+}
+.b{
+  font-weight: 700;
+  font-style: normal;
+}
+/*  margin-left */
+.ml{
+
+}
+/*  margin-right */
+.mr{
+margin-right:1rem;
+}
+
+.section-content-wrapper .header-text{
+  font-size: 1.375em;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 1.6em;
+}
+.section-content-wrapper .body-text{
+  line-height: 1.75em;
+  
+  font-style: normal;
+  margin-bottom: 1.6em;
+}
+.section-content-wrapper .margin-bottom{
+
+}
+
+.skill-section{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  height:100vh;
+  
+}
+
+.skill-section .section-header{
+  background:#811da4;
+  color:white;
+}
+
+.purple{
+  
+  background:#811da4!important;
+}
