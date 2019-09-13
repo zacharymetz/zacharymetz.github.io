@@ -848,7 +848,9 @@ margin-right:1rem;
   font-style: normal;
   margin-bottom: 1.6em;
 }
-
+.section-content-wrapper ul{
+  padding-left: 1rem;
+}
 .skill-section{
   display:flex;
   flex-direction: row;
@@ -885,7 +887,21 @@ margin-right:1rem;
   padding: 0 2rem;
   text-align:center;
 }
-
+.landing-links{
+  margin-top:1rem;
+}
+.landing-links a {
+  margin:0.5rem;
+  font-size: 1.25rem;
+  font-weight:200;
+  text-decoration:none;
+  color:white;
+  transition: all .1s ease-in-out;
+  text-align: center;
+}
+.landing-links a:hover{
+  border-bottom: 2px solid white;
+}
 /*
 
 <div class="landing-intro">
