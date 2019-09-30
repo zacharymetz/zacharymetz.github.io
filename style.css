@@ -902,6 +902,12 @@ margin-right:1rem;
 .landing-links a:hover{
   border-bottom: 2px solid white;
 }
+.footer a {
+  color:white;
+  text-decoration: none;
+}
+
+
 /*
 
 <div class="landing-intro">
