@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>clayo.cloud</title>
+    <link>blog.clayo.cloud/</link>
+    <description>Recent content on clayo.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Zachary Metz - All rights reserved</copyright>
+    <lastBuildDate>Sun, 03 Jan 2021 16:45:16 -0700</lastBuildDate><atom:link href="blog.clayo.cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>blog.clayo.cloud/posts/my-first-post/</link>
+      <pubDate>Sun, 03 Jan 2021 16:45:16 -0700</pubDate>
+      
+      <guid>blog.clayo.cloud/posts/my-first-post/</guid>
+      <description>This is another post Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper libero quis dictum dapibus. Nulla egestas vitae augue eu rutrum. Duis ullamcorper dictum ipsum.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>blog.clayo.cloud/tags/3dprinting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>blog.clayo.cloud/tags/3dprinting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>blog.clayo.cloud/tags/coding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>blog.clayo.cloud/tags/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>blog.clayo.cloud/tags/idea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>blog.clayo.cloud/tags/idea/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>blog.clayo.cloud/tags/prototype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>blog.clayo.cloud/tags/prototype/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About the Author</title>
+      <link>blog.clayo.cloud/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>blog.clayo.cloud/about/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
