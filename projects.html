@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>InteractiveResume</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="animation.css" rel="stylesheet" type="text/css" />
+    <script src="https://zacharymetz.github.io/webAnalytics/analytics.min.js"></script>
+    <!-- in your header -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+  </head>
+  <body>
+    <style>
+
+    .ccIndex{
+      background: url('images/cryptocove/index.png');
+      background-size: contain;
+      background-position: center; 
+      background-repeat: no-repeat;
+    } 
+    .ccLogin{
+      background: url('images/cryptocove/login.png');
+      background-size: contain;
+      background-position: center; 
+      background-repeat: no-repeat;
+    } 
+    .ccWallet{
+      background: url('images/cryptocove/wallet.png');
+      background-size: contain;
+      background-position: center; 
+      background-repeat: no-repeat;
+    } 
+    </style>
+    <div class="projects-section">
+      <a class="back-button-wrapper" href="index.html">
+        <div class="back-button-image"></div>
+        <div class="back-button-text">Back</div>
+      </a>
+      <div class="projects-section-wrapper">
+        <div class="projects-title">
+          Projects
+        </div>
+        <style>
+          .project-grid{
+              display:flex;
+              justify-content: center;
+              flex-direction: row;
+              justify-content: space-evenly;
+              flex-wrap: wrap;
+            }
+            .thanksManjs{
+              background: url('images/drawing.svg');
+              background-size: contain;
+              background-position: center; 
+              background-repeat: no-repeat;
+
+            } 
+            .mountaindb{
+              background: url('images/mountain.svg');
+              background-size: contain;
+              background-position: center; 
+              background-repeat: no-repeat;
+
+            } 
+            .project-card{
+              width:22rem;
+              margin:1rem 2rem;
+              background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem 0;
+              
+            }
+            .project-media{
+              margin:0 auto;
+              height:12rem;
+              width:22rem;
+
+            }
+            .project-content{
+              margin-top:1rem;
+              text-align:center;
+            }
+            .project-title{
+              color: black;
+              text-align: center;
+              font-size: 1.5rem;
+              font-weight: 700;
+              margin-top: 1rem;
+              padding: 0 2rem;
+            }
+            .project-description{
+              color: black;
+              text-align: center;
+              margin-top: 0.5rem;
+              padding: 0 2rem;
+            }
+            .project-links{
+              margin-top:0.5rem;
+              display: flex;
+              justify-content: center;
+              flex-direction: row;
+              justify-content: space-evenly;
+            }
+            a {
+                  color: white;
+                  text-decoration: none;
+              }
+
+              a:hover 
+              {
+                  color:white; 
+                  text-decoration:none; 
+                  cursor:pointer;  
+              }
+            .project-link-btn{
+              background:#b12127;
+              padding:0.3rem 1rem;
+              border-radius: 0.5rem;
+              cursor: pointer;
+            }
+        </style>
+        <div class="project-grid" id="project-grid">
+          
+          
+
+
+       
+
+        </div>
+      </div>
+    </div>
+  </body>
+<script>
+var projects = [
+  {
+    name : "Mountian DB",
+    image : "images//mountain.svg",
+    description : "A key value store database hosted in java meant as a quick development tool.",
+    links : [
+      {
+        title : "LearnMore",
+        href : "#"
+      },
+      {
+        title : "GitHub",
+        href : "https://github.com/zacharymetz/Mountain-DB"
+      }
+      
+    ]
+  },
+  {
+    name : "Thanks.js",
+    image : "images//drawing.svg",
+    description : "A headache free Postgre orm for nodejs with easy of use and deployment at its core.",
+    links : [
+      {
+        title : "LearnMore",
+        href : "#"
+      },
+      {
+        title : "GitHub",
+        href : "https://github.com/zacharymetz/Mountain-DB"
+      }
+      
+    ]
+  },
+  {
+    name : "Socket Chat App",
+    image : "images/chatting.svg",
+    description : "Nodejs and socket.io application that impliments differnce chat rooms and persistance  users",
+    links : [
+      {
+        title : "LearnMore",
+        href : "#"
+      },
+      {
+        title : "GitHub",
+        href : "https://github.com/zacharymetz/chatapp"
+      }
+      
+    ]
+  },
+  {
+    name : "Arkanoid ASM",
+    image : "images/Arkanoid.svg.png",
+    description : "Arkanoid port programed for the raspberry pi 100% in armv7 ",
+    links : [
+      {
+        title : "LearnMore",
+        href : "#"
+      },
+      {
+        title : "GitHub",
+        href : "https://github.com/zacharymetz/Arkanoid_ARM"
+      }
+      
+    ]
+  }
+]
+function renderProjectsGrid(data=null){
+  if(data ==null){
+    data = projects;
+  }
+  var html = " ";
+  for(var i=0;i<data.length;i++){
+    
+    var html = html+ '<div class="project-card">';
+        console.log(html)
+    var html =html+ '  <div class="project-media"  style="background:url('+data[i].image+');background-size:contain;background-position:center;background-repeat:no-repeat;">';
+
+    var html =html+ '</div>';
+    var html =html+ ' <div class="project-card-content">';
+    var html =html+ '    <div class="project-title">';
+       
+    var html =html+ data[i].name.toString();
+    
+    var html =html+ '    </div>';
+    var html =html+ '    <div class="project-description">';
+    var html =html+ data[i].description;
+    var html =html+ '    </div>';
+    var html =html+ '  </div>';
+    
+    var html =html+ '  <div class="project-links">';
+    for(var j=0; j<data[i].links.length;j++){
+      var html =html+ '      <a class="project-link-btn" href="'+data[i].links[j].href+'">';
+      var html =html+ data[i].links[j].title;
+      var html =html+ '      </a>';
+    }
+    var html =html+ '  </div>';
+    var html =html+ '</div>';
+  }
+  
+  document.getElementById("project-grid").innerHTML = html;
+}
+
+// dont goget to add the vent listener 
+document.addEventListener('DOMContentLoaded',function(){renderProjectsGrid();console.log("asd")},false);
+
+</script>
+</html>
