@@ -1,0 +1,44 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "clayo.cloud"
+theme = "mediumish"
+summaryLength = 25
+copyright = "Zachary Metz - All rights reserved"
+enableEmoji = true
+publishDir = "docs"
+#disqusShortname = "your-shortname-here"
+#googleAnalytics = "UA-1XXXXXXX1-1"
+
+
+[params]
+  
+  description ="Ideas were designed for sharing"
+  #mailchimp = "you can provide a mailchimp-link here"
+
+
+[params.author]
+  name = "Zachary Metz"
+  thumbnail = "/images/author.png"
+  description = "Creator of this blog."
+
+
+[params.social]
+  github = "zacharymetz"
+  linkedin = "<username>"
+  xing = "<username>"
+  medium = "zacharymetz"
+  twitter = "zacharymetz"
+  instagram = "<username>"
+
+
+## Main Menu
+[[menu.main]]
+    name = "Blog"
+    weight = 100
+    identifier = "posts"
+    url = "/posts"
+[[menu.main]]
+    name = "About Me"
+    identifier = "about"
+    weight = 200
+    url = "/about"
