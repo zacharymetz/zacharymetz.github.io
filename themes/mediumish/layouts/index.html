@@ -1,0 +1,97 @@
+{{ define "header"}}
+    {{- partial "_shared/navbar.html" . -}}
+{{ end }}
+{{ define "hero" }}
+    <div class="hero" >
+        <div class="container" style="display: flex;flex-grow:  1;align-items: center;justify-content: center;">
+
+       
+        <div class="hero-text">
+            <h1 class="text-center">Ideas are hype. Share them as often as you can.</h1>
+            <p>So you're always welcome to look at mine</p>
+            <a href="/" class="main-action">
+                Explore
+            </a>
+
+        </div>
+        <div class="hero-logo-wrapper">
+            <img class="hero-logo" src="/images/logo.svg">
+        </div>
+       
+    </div>
+</div>
+    <style>
+        .hero{
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            color: white;
+
+        }
+        .hero-text{
+            float: left;
+            width: 600px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .main-action{
+            padding:0.5rem 1rem ;
+            border-radius: 0.2rem;
+            color: white;
+            border: 2px solid white;
+            font-size: 1.25rem;
+        }
+        .main-action:hover{ 
+            border-color: rgb(218, 218, 218);
+            color: rgb(218, 218, 218);
+        }
+.hero-logo{
+  height: 8rem;
+  width:8rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.hero-logo:hover{
+  height: 8rem;
+  width:8rem;
+  transform: translateY(-10px);
+}
+.hero-logo-wrapper{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+    </style>
+{{ end }}
+{{ define "main" }}
+    <div class="main-content">
+         
+       
+        <section class="recent-posts">            
+            <div class="section-title">                
+                <h2><span>Recent Posts</span></h2>                
+            </div>            
+            <div class="row listrecent">
+                {{ $post_paginator := .Paginate (where .Site.RegularPages "Type" "posts") 6 }}
+                {{ range $post_paginator.Pages }}
+                    {{- partial "list-partials/postbox.html" . -}}
+                {{end}}
+            </div>
+        </section>
+        
+    </div>
+
+     
+     
+    {{- partial "_shared/social.html" . -}}
+    {{ if isset .Site.Params.index "alertbar" }}
+    	{{ if .Site.Params.index.alertbar }}
+            {{- partial "_shared/alertbar.html" . -}}
+        {{ end }}
+    {{ end }}
+{{end}}
+
+{{ define "footer" }}
+    {{- partial "_shared/footer.html" . -}}
+{{end}}
