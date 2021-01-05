@@ -1,6 +1,6 @@
-baseURL = "blog.clayo.cloud"
+baseURL = "https://zacharymetz.github.io"
 languageCode = "en-us"
-title = "clayo.cloud"
+title = "Monnix.net"
 theme = "mediumish"
 summaryLength = 25
 copyright = "Zachary Metz - All rights reserved"
