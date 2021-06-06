@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/tropicalgalaxy.net/2d-divisible-nfts/</loc>
+<loc>/2d-divisible-nfts/</loc>
 <lastmod>2021-06-05T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>/tropicalgalaxy.net/about</loc>
+<loc>/about</loc>
 </url>
 <url>
-<loc>/tropicalgalaxy.net/categories</loc>
+<loc>/categories</loc>
 </url>
 <url>
-<loc>/tropicalgalaxy.net/blog</loc>
+<loc>/blog</loc>
 </url>
 <url>
-<loc>/tropicalgalaxy.net/</loc>
+<loc>/</loc>
 </url>
 <url>
-<loc>/tropicalgalaxy.net/tags</loc>
+<loc>/tags</loc>
 </url>
 <url>
-<loc>/tropicalgalaxy.net/category/math/</loc>
+<loc>/category/math/</loc>
 </url>
 <url>
-<loc>/tropicalgalaxy.net/category/blockchain/</loc>
+<loc>/category/blockchain/</loc>
 </url>
 </urlset>

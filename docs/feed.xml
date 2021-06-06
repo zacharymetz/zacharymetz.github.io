@@ -3,10 +3,10 @@
   <channel>
     <title>Tropical Galaxy</title>
     <description>Technology isn't intrinsically good or evil. It's how it's used, like the death ray. Tropical Galaxy is a place for everything the most certain things in life from tech to taxes.</description>
-    <link>tropicalgalaxy.net/</link>
-    <atom:link href="tropicalgalaxy.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Jun 2021 19:59:38 -0600</pubDate>
-    <lastBuildDate>Sat, 05 Jun 2021 19:59:38 -0600</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 05 Jun 2021 20:19:55 -0600</pubDate>
+    <lastBuildDate>Sat, 05 Jun 2021 20:19:55 -0600</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -30,8 +30,8 @@
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Sat, 05 Jun 2021 00:00:00 -0600</pubDate>
-        <link>tropicalgalaxy.net/2d-divisible-nfts/</link>
-        <guid isPermaLink="true">tropicalgalaxy.net/2d-divisible-nfts/</guid>
+        <link>/2d-divisible-nfts/</link>
+        <guid isPermaLink="true">/2d-divisible-nfts/</guid>
         
         
         <category>Math</category>
