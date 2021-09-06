@@ -69,22 +69,30 @@
             <ul class="navbar-nav ml-auto">
 
                 
-                <li class="nav-item">
+
                 
+                <li class="nav-item">
+            
+                    <a class="nav-link" href="/electron-wealth">Electron Wealth</a>
+                </li>
+
+                
+                <li class="nav-item">
+            
+                    <a class="nav-link" href="/projects">Projects</a>
+                </li>
+
+                
+                <li class="nav-item">
+            
                     <a class="nav-link" href="/blog">Blog</a>
                 </li>
 
+                
                 <li class="nav-item">
-                    <a class="nav-link" href="/categories">Categories</a>
-                </li>
-
-                <li class="nav-item">
+            
                     <a class="nav-link" href="/about">About</a>
                 </li>
-
-                
-
-                
 
                 <script src="/assets/js/lunr.js"></script>
 
@@ -121,10 +129,16 @@
 
 <div class="site-content">
 
+
+
 <div class="container">
+
+
 
 <!-- Site Title
 ================================================== -->
+
+    
 
 <!-- Content
 ================================================== -->
@@ -316,6 +330,8 @@
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             
             
+            <a class="next d-block col-md-6 text-lg-right" href="//crypto-gambiling/">New Slot Machine &raquo; </a>
+            
             <div class="clearfix"></div>
             </div>
             <!-- End Categories -->
@@ -334,20 +350,91 @@
     <div class="container">
         <div id="comments" class="row justify-content-center mb-5">
             <div class="col-md-8">
-                <section class="disqus">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'tropicalgalaxy'; 
-        var disqus_developer = 0;
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</section>
+                <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
+
+<script>
+  
+  const pageid;
+  
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  
+  
+  var firebaseConfig = {
+    apiKey: "AIzaSyCNBsB_lFBpkCUScKl1v8nxMA_wttLXH6Q",
+    authDomain: "pluto-c0a81.firebaseapp.com",
+    projectId: "pluto-c0a81",
+    storageBucket: "pluto-c0a81.appspot.com",
+    messagingSenderId: "8273328286",
+    appId: "1:8273328286:web:d3d63130f1f064c314a38f",
+    measurementId: "G-YYJD76ZQ15"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  // init the db listeners
+  const initDBListeners = () =>{
+    firebase.firestore().collection("comments").where("pageid","==",pageid)
+    .onSnapshot((doc) => {
+        console.log("Current data: ", doc.data());
+        // add a new one here
+    });  
+  }
+
+  // log this person in anon if they arent already
+  firebase.auth().onAuthStateChanged((user)=>{
+      if(user){}
+      else{
+        console.log("attempting to sign in ")
+        _this.auth.signInAnonymously().then((user)=>{
+          console.log("yeeeeeet")
+          console.log( "this is the user", user.user.uid);
+          let firstLogin = user.additionalUserInfo.isNewUser
+          _this.firstLogin = firstLogin;
+        })
+      }
+    });
+
+
+    
+
+
+
+
+  // CODE
+
+
+  // Reaction code 
+    // allow for the update of from an array of reactions 
+  // comments 
+    // comment box to post from, single thread 
+    // load comment
+
+</script>
+
+
+
+
+<!-- the comment posting box -->
+<div id="comment-box">
+    <textarea id="">
+
+    </textarea>
+    <button id="">
+        Post
+    </button>
+</div>
+<!-- the list of comments -->
+<div id="comment-list">
+
+</div>
+
 
             </div>
         </div>
@@ -361,6 +448,10 @@ https://search.google.com/structured-data/testing-tool/u/0/
 ================================================== -->
 
 </div>
+
+
+
+
 
 
 
@@ -380,7 +471,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
             
             
                 
-                    <a class="mt-1 mb-1" href="/categories#Math">Math (1)</a>
+                    <a class="mt-1 mb-1" href="/categories#Math">Math (2)</a>
                 
                     <a class="mt-1 mb-1" href="/categories#Blockchain">Blockchain (1)</a>
                 

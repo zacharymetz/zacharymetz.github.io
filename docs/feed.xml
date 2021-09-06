@@ -2,12 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tropical Galaxy</title>
-    <description>Technology isn't intrinsically good or evil. It's how it's used, like the death ray. Tropical Galaxy is a place for everything the most certain things in life from tech to taxes.</description>
+    <description>Technology isn't intrinsically good or evil. It's how it's used, like the death ray. Tropical Galaxy is a place for the most certain things in life from tech to taxes.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Jun 2021 20:19:55 -0600</pubDate>
-    <lastBuildDate>Sat, 05 Jun 2021 20:19:55 -0600</lastBuildDate>
+    <pubDate>Mon, 06 Sep 2021 13:31:26 -0600</pubDate>
+    <lastBuildDate>Mon, 06 Sep 2021 13:31:26 -0600</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>New Slot Machine</title>
+        <description>&lt;p&gt;&lt;a href=&quot;/boost-game&quot;&gt;Game Demo&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Jul 2021 00:00:00 -0600</pubDate>
+        <link>/crypto-gambiling/</link>
+        <guid isPermaLink="true">/crypto-gambiling/</guid>
+        
+        
+        <category>Math</category>
+        
+      </item>
     
       <item>
         <title>2D Divisible NFTs</title>
