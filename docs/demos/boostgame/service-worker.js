@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/demos/boostgame/precache-manifest.4b5e0504aaf1150d1949afb2cb19628e.js"
+  "/demos/boostgame/precache-manifest.e1a7820069104d686f918e74d7e9a340.js"
 );
 
 self.addEventListener('message', (event) => {
